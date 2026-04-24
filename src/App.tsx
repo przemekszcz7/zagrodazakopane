@@ -66,7 +66,7 @@ export default function App() {
   );
 
   return (
-    <div className="min-h-screen selection:bg-tavern-gold selection:text-white">
+    <div className="min-h-screen selection:bg-tavern-gold selection:text-white overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-tavern-cream/90 backdrop-blur-xl border-b border-tavern-wood/5">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
@@ -176,7 +176,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-40 px-6 bg-tavern-cream relative folk-pattern">
+      <section id="about" className="py-40 px-6 bg-tavern-cream relative folk-pattern overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-tavern-cream to-transparent"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 opacity-5">
@@ -363,7 +363,7 @@ export default function App() {
       </section>
 
       <FolkDivider />
-      <section id="galeria" className="py-40 px-6 bg-tavern-cream relative folk-pattern">
+      <section id="galeria" className="py-40 px-6 bg-tavern-cream relative folk-pattern overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeIn} className="text-center mb-32">
             <Parzenica className="w-16 h-16 mx-auto mb-8 text-tavern-gold opacity-40" />
@@ -399,7 +399,7 @@ export default function App() {
       </section>
 
       {/* Contact & Map Section */}
-      <section id="kontakt" className="py-32 px-6 border-t border-tavern-wood/5 bg-white relative">
+      <section id="kontakt" className="py-32 px-6 border-t border-tavern-wood/5 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-20 items-start">
             <motion.div {...fadeIn} className="lg:col-span-4">
