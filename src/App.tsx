@@ -399,22 +399,22 @@ export default function App() {
       </section>
 
       {/* Contact & Map Section */}
-      <section id="kontakt" className="py-32 px-6 border-t border-tavern-wood/5 bg-white relative overflow-hidden">
+      <section id="kontakt" className="py-24 md:py-32 px-4 sm:px-6 border-t border-tavern-wood/5 bg-white relative">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-12 gap-20 items-start">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             <motion.div {...fadeIn} className="lg:col-span-4">
-              <h3 className="text-4xl font-bold mb-12 italic font-serif flex items-center gap-4 text-tavern-dark">
+              <h3 className="text-3xl md:text-4xl font-bold mb-10 italic font-serif flex flex-wrap items-center gap-x-4 gap-y-2 text-tavern-dark">
                 Znajdź nas w <span className="text-tavern-gold">Sercu</span> Zakopanego
               </h3>
               
-              <div className="space-y-12">
-                <div className="flex gap-6">
-                  <div className="shrink-0 w-12 h-12 bg-tavern-gold/10 rounded-xl flex items-center justify-center text-tavern-gold">
-                    <MapPin size={24} />
+              <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-10">
+                <div className="flex gap-4 sm:gap-6 group">
+                  <div className="shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-tavern-gold/10 rounded-xl flex items-center justify-center text-tavern-gold">
+                    <MapPin size={20} className="sm:w-6 sm:h-6" />
                   </div>
                   <div>
                     <h4 className="text-[10px] uppercase tracking-[0.3em] font-black text-tavern-gold mb-3">Lokalizacja</h4>
-                    <p className="text-2xl font-bold leading-tight">
+                    <p className="text-xl sm:text-2xl font-bold leading-tight">
                       Krupówki 24<br />
                       34-500 Zakopane
                     </p>
@@ -457,7 +457,7 @@ export default function App() {
               transition={{ delay: 0.3 }}
               className="lg:col-span-8 space-y-12"
             >
-              <div className="grid sm:grid-cols-2 gap-12 bg-tavern-cream/30 p-10 rounded-[3rem] border border-tavern-wood/5">
+              <div className="grid sm:grid-cols-2 gap-8 lg:gap-12 bg-tavern-cream/30 p-6 sm:p-10 rounded-[2.5rem] sm:rounded-[3rem] border border-tavern-wood/5">
                 <div>
                   <h3 className="text-xl font-bold mb-8 italic font-serif flex items-center gap-4">
                     <Clock className="text-tavern-gold" size={20} /> Godziny otwarcia
@@ -471,9 +471,9 @@ export default function App() {
                     ))}
                   </div>
                 </div>
-                <div className="relative group">
+                <div className="relative group overflow-hidden rounded-[2rem] w-full max-w-full">
                   <div className="absolute -inset-4 bg-tavern-gold/5 rounded-[2rem] group-hover:scale-105 transition-transform"></div>
-                  <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-square shadow-tavern-brown/10">
+                  <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-2 sm:border-4 border-white aspect-square sm:aspect-auto sm:h-full shadow-tavern-brown/10 w-full">
                     <iframe 
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.070882631626!2d19.95056521273461!3d49.29400037127513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f2912b6578ef%3A0x1d2720b4207972d3!2sKarczma%20Zagroda!5e0!3m2!1spl!2spl!4v1777016954010!5m2!1spl!2spl" 
                       width="100%" 
