@@ -495,15 +495,9 @@ export default function App() {
       {/* Footer */}
       <footer className="py-20 px-6 bg-tavern-dark text-white relative overflow-hidden wood-texture">
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <motion.div {...fadeIn} className="flex flex-col items-center gap-10">
-            <div className="relative">
-              <Parzenica className="absolute -inset-10 text-tavern-gold/20 animate-pulse" />
-              <img 
-                src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/465440644_122101444844596263_5355178507973342333_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=pbWCW5mcRRcQ7kNvwH90XiH&_nc_oc=AdoZr_xfXMdjRiedXqsLEaJS-h6Nk8XG0eaQ-IaoRZfTSsySuR9DZYqLlMu1pMnM5Jk&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=H_5tdgnlyEONyX_EJRSwrQ&oh=00_Af38ihd8LiEpzxUHnD-npropYcEjRjxtpCb1A1X2rVnLJg&oe=69F0D91C" 
-                alt="Logo Small" 
-                className="w-16 h-16 rounded-full border-2 border-tavern-gold object-cover shadow-2xl relative z-10 brightness-75 hover:brightness-100 transition-all"
-                referrerPolicy="no-referrer"
-              />
+          <motion.div {...fadeIn} className="flex flex-col items-center gap-8">
+            <div className="relative w-16 h-16 mb-2">
+              <Parzenica className="absolute inset-0 text-tavern-gold opacity-30" />
             </div>
             <div>
               <h2 className="font-serif text-3xl font-black tracking-widest text-tavern-gold uppercase italic mb-2">Zagroda</h2>
